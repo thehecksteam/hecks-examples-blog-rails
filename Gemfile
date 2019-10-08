@@ -61,7 +61,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'blog', path: '../blog'
+gem 'blog', '0.0.1'
 gem 'rspec-rails'
 gem 'pry'
 gem 'hecks_on_rails'
