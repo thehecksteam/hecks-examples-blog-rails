@@ -46,8 +46,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
@@ -62,7 +62,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blog', '0.0.1'
-gem 'rspec-rails'
-gem 'pry'
-gem 'hecks_on_rails'
 gem 'hecks-adapters-dynamodb', '0.1.0'
+gem 'hecks-active_model'
+gem 'hecks_on_rails'
+gem 'pry'
+gem 'rspec-rails'
