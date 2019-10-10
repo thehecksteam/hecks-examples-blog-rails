@@ -63,7 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'blog', '0.0.1'
 gem 'hecks-adapters-dynamodb', '0.1.0'
-gem 'hecks-active_model'
 gem 'hecks_on_rails'
 gem 'pry'
 gem 'rspec-rails'

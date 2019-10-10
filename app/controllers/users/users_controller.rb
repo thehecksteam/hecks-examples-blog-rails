@@ -43,7 +43,7 @@ class Users::UsersController < ApplicationController
 
   # DELETE /users/users/1
   def destroy
-    @users_user.destroy
+    Domain[@users_user].destroy
     redirect_to users_users_url, notice: 'User was successfully destroyed.'
   end
 
