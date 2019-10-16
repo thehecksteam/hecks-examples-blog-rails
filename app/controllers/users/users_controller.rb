@@ -34,7 +34,8 @@ class Users::UsersController < ApplicationController
 
   # PATCH/PUT /users/users/1
   def update
-    if @users_user.update(users_user_params)
+    @users_user.update_name!(name: users_user_params[:name])
+    if @users_user.save
       redirect_to @users_user, notice: 'User was successfully updated.'
     else
       render :edit
@@ -44,6 +45,7 @@ class Users::UsersController < ApplicationController
   # DELETE /users/users/1
   def destroy
     Domain[@users_user].destroy
+    
     redirect_to users_users_url, notice: 'User was successfully destroyed.'
   end
 
